@@ -22,7 +22,6 @@ export default function Victims() {
 
   return (
     <div className="w-screen">
-      <Header />
       <main>
         <DrawerDialog />
         <div className="flex flex-wrap">

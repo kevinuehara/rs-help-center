@@ -156,27 +156,6 @@ function ProfileForm({
       onSubmit={handleSubmit}
     >
       <div className="grid gap-2">
-        <Label htmlFor="email">Email para contato</Label>
-        <Input
-          type="email"
-          id="email"
-          placeholder="email@exemplo.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
-      <div className="grid gap-2">
-        <Label htmlFor="phone">Telefone</Label>
-        <Input
-          type="phone"
-          id="phone"
-          placeholder="(55) 55555-5555"
-          required
-          value={phone}
-          onChange={(e) => setPhone(e.currentTarget.value)}
-        />
-      </div>
-      <div className="grid gap-2">
         <Label htmlFor="name">Nome da vítima/desaparecido</Label>
         <Input
           type="name"
@@ -206,6 +185,27 @@ function ProfileForm({
           required
           value={locale}
           onChange={(e) => setLocale(e.target.value)}
+        />
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor="email">Email para contato</Label>
+        <Input
+          type="email"
+          id="email"
+          placeholder="email@exemplo.com"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor="phone">Telefone</Label>
+        <Input
+          type="phone"
+          id="phone"
+          placeholder="(55) 55555-5555"
+          required
+          value={phone}
+          onChange={(e) => setPhone(e.currentTarget.value)}
         />
       </div>
       <div className="grid gap-2">

@@ -3,8 +3,6 @@
 import { ItemMenu } from "./ItemMenu";
 import { Button } from "@/components/ui/button";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaTwitter, FaDev, FaYoutube } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -17,17 +15,17 @@ export const Menu = () => {
           <ItemMenu label="Home" href="/" />
           <ItemMenu label="Vítimas" href="/victims" />
           <ItemMenu label="Ajuda" href="/help" />
-          <ItemMenu label="FAQ" href="/help" />
           <ItemMenu label="Mapa" href="/map" />
+          <ItemMenu label="FAQ" href="/faq" />
         </div>
       </div>
 
       <Button
         onClick={() => setIsOpen(!isOpen)}
         variant="outline"
-        className="rounded-full w-14 h-14 md:hidden block mr-2 bg-black hover:bg-gray-500"
+        className="rounded-full w-14 h-14 md:hidden block mr-2 bg-white hover:bg-gray-200"
       >
-        <GiHamburgerMenu className="w-5 h-5" />
+        <GiHamburgerMenu className="w-5 h-5 text-black" />
       </Button>
 
       {isOpen && (
@@ -54,13 +52,7 @@ export const Menu = () => {
             >
               Ajuda
             </Link>
-            <Link
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-xl font-semibold m-3 cursor-pointer hover:text-gray-500"
-              href="/faq"
-            >
-              FAQ
-            </Link>
+
             <Link
               onClick={() => setIsOpen(!isOpen)}
               className="text-xl font-semibold m-3 cursor-pointer hover:text-gray-500"
@@ -68,8 +60,15 @@ export const Menu = () => {
             >
               Mapa
             </Link>
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-xl font-semibold m-3 cursor-pointer hover:text-gray-500"
+              href="/faq"
+            >
+              FAQ
+            </Link>
             <hr className="bg-gray-400 w-full" />
-            <span className="m-3 cursor-pointer hover:text-purple- bg-white">
+            <span className="font-bold m-3 cursor-pointer hover:text-purple- bg-white">
               Empatia e soliedariedade pelas vítimas do desastre ❤️
             </span>
           </div>
