@@ -41,7 +41,7 @@ export default function Help() {
               className="text-red-700 font-bold"
               href="https://www.acaodacidadania.org.br/"
             >
-              https://www.acaodacidadania.org.br/
+              Ação Cidadania
             </a>
           </p>
         </div>

@@ -20,11 +20,12 @@ export default function Faq() {
 
         <h2 className="mt-7 font-bold">Sobre a RHC</h2>
         <p className="mt-2">
-          A RHC é uma plataforma totalmente desvinculada à qualquer organização
-          social ou política. Foi totalmente criada inicialmente por mim,{" "}
-          <span className="font-bold">Kevin Uehara</span>. - Staff Frontend
-          Engineer no IFood, colaborador das comunidades NodeBR e GDG Campinas
-          (Google Developer Groups), palestrante e criador de conteúdo tech.
+          A RHC é uma plataforma totalmente independente e desvinculada à
+          qualquer organização social ou política. Foi totalmente criada
+          inicialmente por mim, <span className="font-bold">Kevin Uehara</span>.
+          - Staff Frontend Engineer no IFood, colaborador das comunidades NodeBR
+          e GDG Campinas (Google Developer Groups), palestrante e criador de
+          conteúdo tech.å
         </p>
         <p className="font-bold mt-2">Contatos:</p>
         <ul>
@@ -67,7 +68,7 @@ export default function Faq() {
         <h2 className="mt-7 font-bold">Como posso ajudar a RHC?</h2>
         <p className="mt-2">
           Caso não tenha conhecimento sobre desenvolvimento, você pode ajudar
-          <span className="font-bold">compartilhando</span> o site para outras
+          <span className="font-bold"> compartilhando</span> o site para outras
           pessoas ou alimentando com dados de pessoas desaparecidas.
         </p>
       </section>
