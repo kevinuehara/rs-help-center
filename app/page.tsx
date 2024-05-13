@@ -41,7 +41,6 @@ export default function Home() {
           visualizar as regiões no mapa.
         </p>
       </section>
-      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { DrawerDialog } from "../components/FormVictim";
 import { useEffect, useState } from "react";
 import { User } from "@/types";
+import { VictimCard } from "../components/VictimCard";
 
 export default function Victims() {
   const [users, setUsers] = useState<User[]>([]);
@@ -24,9 +25,13 @@ export default function Victims() {
       <Header />
       <main>
         <DrawerDialog />
-        {users && users.map((user) => <div key={user.id}>{user.email}</div>)}
+        <div className="flex flex-wrap">
+          {users &&
+            users.map((user, key) => (
+              <VictimCard key={user.id ? +user.id : key} victim={user} />
+            ))}
+        </div>
       </main>
-      <Footer />
     </div>
   );
 }
