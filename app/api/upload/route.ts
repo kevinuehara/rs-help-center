@@ -9,7 +9,7 @@ const s3Client = new S3Client({
   },
 });
 
-async function uploadToS3(file, fileName) {
+async function uploadToS3(file: any, fileName: string) {
   const fileBuffer = file;
 
   const params = {
@@ -24,7 +24,7 @@ async function uploadToS3(file, fileName) {
   return `https://rs-help-bucket.s3.amazonaws.com/${fileName}`;
 }
 
-export async function POST(request) {
+export async function POST(request: any) {
   try {
     const formData = await request.formData();
     const file = formData.get("file");
